@@ -12,18 +12,15 @@ st.subheader(
     "Chronic Kidney Disease Prediction System"
 )
 
-age = st.number_input(
+age = st.text_input(
     "Age",
-    min_value=1,
-    max_value=100,
-    value=50
+    "50"
 )
 
-gender = st.selectbox(
+gender = st.radio(
     "Gender",
     ["Male", "Female"]
 )
-
 if st.button("Predict CKD Risk"):
 
     st.success("Prediction Completed")
