@@ -123,6 +123,13 @@ with col2:
         500.0,
         100.0
     )
+   
+    urdact = st.number_input(
+    "URDACT",
+    0.0,
+    15000.0,
+    8.0
+)
 
     acr = st.number_input(
         "Albumin-Creatinine Ratio",
