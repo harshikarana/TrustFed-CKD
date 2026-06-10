@@ -154,24 +154,25 @@ with col2:
 
 if st.button("Predict CKD Risk"):
 
-    patient = np.array([[
-        age,
-        gender,
-        race,
-        bmi,
-        sys_bp,
-        dia_bp,
-        creatinine,
-        bun,
-        albumin,
-        glucose,
-        hemoglobin,
-        urine_albumin,
-        urine_creatinine,
-        acr,
-        hypertension,
-        diabetes
-    ]])
+  patient = np.array([[
+    age,
+    gender,
+    race,
+    bmi,
+    sys_bp,
+    dia_bp,
+    creatinine,
+    bun,
+    albumin,
+    glucose,
+    hemoglobin,
+    urine_albumin,
+    urine_creatinine,
+    urdact,
+    acr,
+    hypertension,
+    diabetes
+]])
 
     patient_scaled = scaler.transform(patient)
 
