@@ -3,13 +3,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
-from tensorflow.keras.models import load_model
-
-# -------------------------
-# Load Model
-# -------------------------
-
-model = load_model("trustfed_ckd_model.h5")
 scaler = joblib.load("scaler.pkl")
 
 # -------------------------
